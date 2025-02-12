@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Inline Script to Set Theme Before Page Renders -->
+    <script>
+        // Check for saved theme preference in localStorage
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav>
+            <div class="nav-links">
+                <a href="#blogs">Blogs</a>
+                <a href="#projects">Projects</a>
+                <button id="theme-toggle">☀️</button>
+            </div>
+        </nav>
+        <!-- Main Content -->
+        <main>
+            <div class="profile-section">
+                <div class="profile-info">
+                    <h1>Fahd Bahri</h1>
+                    <p class="bio">
+                        I build things and try to remember to write about them.
+                    </p>
+                    <div class="social-handles">
+                        <a href="https://github.com/fahdbahri" class="social-handle">GitHub</a>
+                        <a href="https://linkedin.com/in/fahdbahri" class="social-handle">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="profile-image">
+                    <img src="profile pictures/Main.png" alt="Profile Image">
+                </div>
+            </div>
+
+
+            <!-- Blogs Section -->
+            <section id="blogs" class="blog-section">
+                <h2>Blogs</h2>
+                <div class="blog-posts">
+                    <a href="" class="blog-post">
+                        <h3>Coming Soon...</h3>
+                        <p></p>
+                        <div class="post-meta">
+                            <span class="date"></span>
+                            <span class="read-time"></span>
+                        </div>
+                    </a>
+
+                    <a href="" class="blog-post">
+                        <h3>Coming soon...</h3>
+                        <p></p>
+                        <div class="post-meta">
+                            <span class="date"></span>
+                            <span class="read-time"></span>
+                        </div>
+                    </a>
+
+                    <a href="" class="blog-post">
+                        <h3>Coming soon...</h3>
+                        <p></p>
+                        <div class="post-meta">
+                            <span class="date"></span>
+                            <span class="read-time"></span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+
+            <!-- Projects Section -->
+            <section id="projects" class="projects-section">
+                <h2>Projects</h2>
+                <div class="projects-list">
+                    <a href="https://github.com/fahdbahri/TechNews" class="project-card">
+                        <h3>AI Powered Newsletter</h3>
+                        <p class="project-description">
+                            A tech news aggregator powered by Llama 3.1, delivering personalized summaries with 35%
+                            higher discovery rates. Built with Python, Docker, and GCP for reliable performance and
+                            real-time notifications.
+                        </p>
+                        <div class="project-meta">
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Together AI</span>
+                                <span>Docker</span>
+                                <span>GCP</span>
+                            </div>
+                            <div class="github-link">
+                                <span>→ GitHub</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/fahdbahri/ai-search-engine" class="project-card">
+                        <h3>AI Podcast Search Engine</h3>
+                        <p class="project-description">
+                            A high-performance podcast search platform that processes YouTube transcripts with
+                            lightning-fast response times. Features a React frontend with 95% Lighthouse score and
+                            optimized SQLite backend.
+                        </p>
+                        <div class="project-meta">
+                            <div class="tech-stack">
+                                <span>Flask</span>
+                                <span>React</span>
+                                <span>scikit-learn</span>
+                                <span>SQLite</span>
+                            </div>
+                            <div class="github-link">
+                                <span>→ GitHub</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a href="https://github.com/fahdbahri/ai-notetaker" class="project-card">
+                        <h3>AI Live Meeting Notetaker</h3>
+                        <p class="project-description">
+                            Real-time meeting transcription and summarization tool achieving 95% accuracy and 70%
+                            content reduction. Built with FastAPI and React for seamless real-time collaboration.
+                        </p>
+                        <div class="project-meta">
+                            <div class="tech-stack">
+                                <span>FastAPI</span>
+                                <span>React</span>
+                                <span>Socket.IO</span>
+                                <span>Transformers</span>
+                            </div>
+                            <div class="github-link">
+                                <span>→ GitHub</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
