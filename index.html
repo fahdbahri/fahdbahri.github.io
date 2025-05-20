@@ -1,54 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Fahd Bahri</title>
-
-  <!-- Critical CSS - prevents flash -->
-  <style>
-    body {
-      background-color: #1a1a1a;
-      color: #ffffff;
-      margin: 0;
-      padding: 0;
-      font-family: 'Inter', sans-serif;
-    }
-    .video-bg {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      object-fit: cover;
-      object-position: center;
-      z-index: -2;
-      opacity: 0;
-      transition: opacity 1s ease;
-      pointer-events: none;
-    }
-    .container {
-      position: relative;
-      z-index: 10;
-    }
-  </style>
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Your CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-  <!-- Background video -->
-  <video class="video-bg" autoplay muted loop playsinline>
-    <source src="background.mp4" type="video/mp4" />
-  </video>
-
   <div class="container">
-    <!-- Navigation -->
     <nav>
       <div class="nav-links">
         <a href="#profile">Home</a>
@@ -57,7 +17,6 @@
       </div>
     </nav>
 
-    <!-- Main content -->
     <main>
       <div id="profile" class="profile-section">
         <div class="profile-info">
@@ -69,11 +28,10 @@
           </div>
         </div>
         <div class="profile-image">
-          <img src="profile pictures/Main.png" alt="Profile Image" />
+          <img src="profile pictures/profile_pic.png" alt="Profile Image" />
         </div>
       </div>
 
-      <!-- Projects Section -->
       <section id="projects" class="projects-section">
         <h2>Projects</h2>
         <div class="projects-list">
@@ -81,8 +39,7 @@
             <h3>AI Powered Newsletter</h3>
             <p class="project-description">
               Developed an automated system that aggregates AI/LLM news from 15+ sources (Reddit,
-              X/Twitter,
-              Firecrawl), generates summaries using Llama-3-70B, and delivers curated updates via
+              X/Twitter, Firecrawl), generates summaries using Llama-3-70B, and delivers updates via
               Telegram.
             </p>
             <div class="project-meta">
@@ -139,42 +96,25 @@
         </div>
       </section>
 
-      <!-- Blogs Section -->
       <section id="blogs" class="blog-section">
         <h2>Blogs</h2>
         <div class="blog-posts">
           <a href="" class="blog-post">
             <h3>Coming Soon...</h3>
-            <p></p>
             <div class="post-meta">
               <span class="date"></span>
-              <span class="read-time"></span>
             </div>
           </a>
-
           <a href="" class="blog-post">
             <h3>Coming soon...</h3>
-            <p></p>
             <div class="post-meta">
               <span class="date"></span>
-              <span class="read-time"></span>
-            </div>
-          </a>
-
-          <a href="" class="blog-post">
-            <h3>Coming soon...</h3>
-            <p></p>
-            <div class="post-meta">
-              <span class="date"></span>
-              <span class="read-time"></span>
             </div>
           </a>
         </div>
       </section>
     </main>
   </div>
-
-  <!-- Your JS -->
   <script src="script.js"></script>
 </body>
 </html>
