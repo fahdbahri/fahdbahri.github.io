@@ -1,45 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const themeToggle = document.getElementById('theme-toggle');
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
-    
-    // Update theme toggle button text
-    function updateThemeToggle() {
-        themeToggle.textContent = document.documentElement.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
-    }
+  const video = document.querySelector('.video-bg');
+  
+  // Fade in the video smoothly once it can play through
+  video.addEventListener('canplaythrough', () => {
+    video.style.opacity = '0.2'; // Adjust this value if you want it brighter/dimmer
+  });
 
-    updateThemeToggle();
-
-    // Toggle theme
-    themeToggle.addEventListener('click', () => {
-        const currentTheme = document.documentElement.getAttribute('data-theme');
-        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
-        document.documentElement.setAttribute('data-theme', newTheme);
-        localStorage.setItem('theme', newTheme);
-        updateThemeToggle();
-    });
-
-    // Update theme when system preference changes
-    prefersDarkScheme.addEventListener('change', (e) => {
-        if (!localStorage.getItem('theme')) {
-            const newTheme = e.matches ? 'dark' : 'light';
-            document.documentElement.setAttribute('data-theme', newTheme);
-            updateThemeToggle();
-        }
-    });
-
-    // Smooth scroll for navigation links
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-            
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
-            }
+  // Smooth scroll behavior for nav links
+  document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
         });
+      }
     });
+  });
 });
