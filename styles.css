@@ -101,6 +101,7 @@ nav {
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
+  margin: 0 auto; /* Center the image horizontally */
 }
 
 .profile-image img {
@@ -137,6 +138,13 @@ nav {
   margin-top: var(--spacing-sm);
 }
 
+.project-description {
+  font-size: 0.95rem;
+  font-weight: 400; 
+  color: var(--muted);
+  margin-top: var(--spacing-sm);
+}
+
 .tech-stack span {
   background-color: var(--primary);
   color: white;
@@ -160,5 +168,14 @@ nav {
   
   .social-handles {
     justify-content: center;
+  }
+
+
+  .profile-image {
+    flex: 0 0 auto; /* Allow flexibility */
+    width: 150px; /* Smaller size for mobile */
+    height: 150px;
+    max-width: 40vw; /* Scale with viewport width */
+    border: 2px solid var(--border); /* Optional: add a border for clarity */
   }
 }
