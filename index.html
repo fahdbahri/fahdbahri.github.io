@@ -1,95 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Fahd Bahri</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fahd Bahri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <div class="container">
-
-    <main>
-      <div id="profile" class="profile-section">
-        <div class="profile-info">
-          <h1>Fahd Bahri</h1>
-          <p class="bio">I build things then try to remember to write about them.</p>
-          <div class="social-handles">
-            <a href="https://github.com/fahdbahri" class="social-handle">GitHub</a>
-            <a href="https://linkedin.com/in/fahdbahri" class="social-handle">LinkedIn</a>
-          </div>
-        </div>
-        <div class="profile-image">
-          <img src="profile pictures/profile_pic.png" alt="Profile Image" />
-        </div>
-      </div>
-
-      <section id="projects" class="projects-section">
-        <h2>Projects</h2>
-        <div class="projects-list">
-          <a href="https://github.com/fahdbahri/TechNews" class="project-card">
-            <h3>AI Powered Newsletter</h3>
-            <p class="project-description">
-              Developed an automated system that aggregates AI/LLM news from 15+ sources (Reddit,
-              X/Twitter, Firecrawl), generates summaries using Llama-3-70B, and delivers updates via
-              Telegram.
-            </p>
-            <div class="project-meta">
-              <div class="tech-stack">
-                <span>Python</span>
-                <span>Llama 3</span>
-                <span>Docker</span>
-                <span>Redis</span>
-              </div>
-              <div class="github-link">
-                <span>→ GitHub</span>
-              </div>
+    <div class="container">
+        <div id="profile" class="profile-section">
+            <div class="profile-image">
+                <img src="profile pictures/profile_pic.png" alt="Profile Image" />
             </div>
-          </a>
-
-          <a href="https://github.com/fahdbahri/ai-search-engine" class="project-card">
-            <h3>AI Podcast Search Engine</h3>
-            <p class="project-description">
-              A high-performance podcast search platform that processes YouTube transcripts with
-              lightning-fast response times. Features a React frontend with 95% Lighthouse score and
-              optimized SQLite backend.
-            </p>
-            <div class="project-meta">
-              <div class="tech-stack">
-                <span>Flask</span>
-                <span>React</span>
-                <span>scikit-learn</span>
-                <span>SQLite</span>
-              </div>
-              <div class="github-link">
-                <span>→ GitHub</span>
-              </div>
+            <div class="profile-info">
+                <h1>Fahd Bahri</h1>
+                <p class="bio">I build things then try to remember to write about them.</p>
+                <div class="social-handles">
+                    <a href="https://github.com/fahdbahri" class="social-handle">GitHub</a>
+                    <a href="https://linkedin.com/in/fahdbahri" class="social-handle">LinkedIn</a>
+                </div>
             </div>
-          </a>
 
-          <a href="https://github.com/fahdbahri/ai-notetaker" class="project-card">
-            <h3>AI Live Meeting Notetaker</h3>
-            <p class="project-description">
-              Real-time meeting transcription and summarization tool achieving 95% accuracy and 70%
-              content reduction. Built with FastAPI and React for seamless real-time collaboration.
-            </p>
-            <div class="project-meta">
-              <div class="tech-stack">
-                <span>FastAPI</span>
-                <span>React</span>
-                <span>Socket.IO</span>
-                <span>Transformers</span>
-              </div>
-              <div class="github-link">
-                <span>→ GitHub</span>
-              </div>
-            </div>
-          </a>
         </div>
-      </section>
-    </main>
-  </div>
-  <script src="script.js"></script>
+
+        <section id="projects" class="projects-section">
+            <h2>Projects</h2>
+            <div class="projects-list">
+                <a href="https://github.com/fahdbahri/TechNews" class="project-card">
+                    <h3>AI Powered Newsletter</h3>
+                    <p class="project-description">
+                        Developed an automated system that aggregates AI/LLM news from 15+ sources (Reddit,
+                        X/Twitter), generates summaries using Llama-3-70B together AI, and delivers updates via
+                        Telegram.
+                    </p>
+                    <div class="project-meta">
+                        <div class="tech-stack">
+                            <span>Python</span>
+                            <span>Llama 3</span>
+                            <span>Docker</span>
+                            <span>Redis</span>
+                        </div>
+                        <div class="github-link">
+                            <span>→ GitHub</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/fahdbahri/ai-search-engine" class="project-card">
+                    <h3>History Chat Search Engine</h3>
+                    <p class="project-description">
+                        Platform where you can search all over your messages in one place (Gmail, Telegram)
+                    </p>
+                    <div class="project-meta">
+                        <div class="tech-stack">
+                            <span>FastAPI</span>
+                            <span>React</span>
+                            <span>ElasticSearch</span>
+                            <span>Celery</span>
+                        </div>
+                        <div class="github-link">
+                            <span>→ GitHub</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://github.com/fahdbahri/ai-notetaker" class="project-card">
+                    <h3>AI Live Meeting Notetaker</h3>
+                    <p class="project-description">
+                        Real-time meeting transcription and summarization tool achieving 95% accuracy and 70%
+                        content reduction. Built with FastAPI and React for real-time collaboration.
+                    </p>
+                    <div class="project-meta">
+                        <div class="tech-stack">
+                            <span>FastAPI</span>
+                            <span>React</span>
+                            <span>Socket.IO</span>
+                            <span>Transformers</span>
+                        </div>
+                        <div class="github-link">
+                            <span>→ GitHub</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </div>
 </body>
+
 </html>
