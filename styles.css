@@ -25,6 +25,7 @@ body {
   background-color: var(--background);
   color: var(--text);
   line-height: 1.6;
+  padding-bottom: var(--spacing-xl)
 }
 
 .container {
@@ -101,7 +102,7 @@ nav {
   height: 200px;
   border-radius: 50%;
   overflow: hidden;
-  margin: 0 auto; /* Center the image horizontally */
+  margin: 0 auto;
 }
 
 .profile-image img {
@@ -110,17 +111,17 @@ nav {
   object-fit: cover;
 }
 
-.projects-section, .blog-section {
+.projects-section {
   margin-top: var(--spacing-xl);
 }
 
-.projects-list, .blog-posts {
+.projects-list {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-md);
 }
 
-.project-card, .blog-post {
+.project-card {
   border: 1px solid var(--border);
   border-radius: 12px;
   padding: var(--spacing-md);
@@ -128,7 +129,7 @@ nav {
   color: var(--text);
 }
 
-.project-card:hover, .blog-post:hover {
+.project-card:hover {
   box-shadow: 0 4px 15px rgba(0, 102, 204, 0.25);
 }
 
@@ -172,10 +173,10 @@ nav {
 
 
   .profile-image {
-    flex: 0 0 auto; /* Allow flexibility */
-    width: 150px; /* Smaller size for mobile */
+    flex: 0 0 auto;
+    width: 150px; 
     height: 150px;
-    max-width: 40vw; /* Scale with viewport width */
-    border: 2px solid var(--border); /* Optional: add a border for clarity */
+    max-width: 40vw;
+    border: 2px solid var(--border);
   }
 }
