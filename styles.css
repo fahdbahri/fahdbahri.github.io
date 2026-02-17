@@ -16,6 +16,7 @@
   box-sizing: border-box;
 }
 
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 100px;
@@ -43,7 +44,10 @@ body {
   position: sticky;
   top: var(--spacing-xl);
   align-self: start;
+  padding-top: 150px;
+
 }
+
 
 .projects-section {
   grid-column: 2;
@@ -90,14 +94,6 @@ body {
   align-items: center;
 }
 
-.tech-stack span {
-  background-color: var(--primary);
-  color: white;
-  padding: 2px 8px;
-  margin-right: 6px;
-  border-radius: 6px;
-  font-size: 12px;
-}
 
 .github-link span {
   color: var(--primary);
@@ -139,8 +135,11 @@ body {
 }
 
 .profile-image img {
-  width: 100%;
-  max-width: 200px;
+  display: inline-block;
+  width: 100px;
+  max-width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* Mobile responsiveness */
