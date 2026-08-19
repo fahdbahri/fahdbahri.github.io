@@ -82,7 +82,7 @@ body {
 
 .project-description {
   font-size: clamp(0.8rem, 2.5vw, 0.95rem);
-  font-weight: 400; 
+  font-weight: 400;
   color: var(--muted);
   margin-bottom: var(--spacing-sm);
   line-height: 1.5;
@@ -129,15 +129,16 @@ body {
 
 .profile-image {
   width: 100%;
+  margin-bottom: 40px;
   max-width: 300px;
   overflow: hidden;
   margin-top: var(--spacing-md);
 }
 
 .profile-image img {
-  display: inline-block;
+  display: block;
   width: 100px;
-  max-width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
 }
@@ -149,12 +150,12 @@ body {
     --spacing-md: 16px;
     --spacing-sm: 16px;
   }
-  
+
   .container {
     grid-template-columns: 1fr;
     gap: var(--spacing-md);
   }
-  
+
   .profile-section {
     grid-column: 1;
     position: static;
@@ -164,19 +165,23 @@ body {
     align-items: center;
     text-align: center;
   }
-  
+
   .projects-section {
     grid-column: 1;
   }
-  
+
   .profile-info {
     text-align: center;
   }
-  
+
+  .profile-image img {
+    margin: 0 auto;
+  }
+
   .social-handles {
     justify-content: center;
   }
-  
+
   .project-meta {
     flex-direction: column;
     gap: var(--spacing-sm);
@@ -190,7 +195,7 @@ body {
     --spacing-md: 12px;
     --spacing-sm: 12px;
   }
-  
+
   .projects-list {
     gap: 8px;
   }
